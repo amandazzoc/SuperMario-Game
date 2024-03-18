@@ -315,6 +315,63 @@
   display: flex;
   gap: 30px;
 }
+.modal .modal-ranking {
+  width: 750px;
+  min-height: 450px;
+  max-height: 520px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 14px #199bd9;
+  background-image: url("../img/background-login.png");
+  padding: 50px 60px;
+  display: none;
+  position: relative;
+}
+.modal .modal-ranking.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fade-up 1s forwards;
+}
+.modal .modal-ranking .regras {
+  background-color: rgba(243, 243, 243, 0.8156862745);
+  padding: 18px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1450980392);
+}
+.modal .modal-ranking .wrapper-tabela {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 11px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.modal .modal-ranking .wrapper-tabela::-webkit-scrollbar {
+  width: 10px;
+}
+.modal .modal-ranking .wrapper-tabela::-webkit-scrollbar-thumb {
+  background: #199bd9;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-radius: 5px;
+}
+.modal .modal-ranking .wrapper-tabela::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1843137255);
+  border-radius: 10px;
+}
+.modal .modal-ranking .wrapper-tabela .tabela-ranking {
+  width: 100%;
+  text-align: center;
+}
+.modal .modal-ranking .wrapper-tabela .tabela-ranking.coluna {
+  padding: 5px;
+}
 .modal .btn-modal {
   background: none;
   border: none;
