@@ -52,7 +52,7 @@
     </main>
 
     <section class="modal habilitar">
-        <section class="modal-login active">
+        <section class="modal-login">
             <h1 class="titulo"><span class="azul">Pronto</span> <span class="amarelo">para</span> <span class="vermelho">um</span> <span class="verde">novo</span> <span class="amarelo">desafio?</span></h1>
 
             <input type="text" class="input-jogador" id="inputJogador" placeholder="Jogador..." onfocus="true">
@@ -62,7 +62,20 @@
             <p class="regras">Use as teclas <span class="azul">'Arrow up', </span><span class="vermelho"> 'Arrow down' </span> ou <span class="verde">'space'</span> para mover o Mario no jogo!</p>
 
         </section>
-        <section class="modal-game-over"></section>
+
+
+        <section class="modal-game-over active">
+
+            <h1 class="titulo"><span class="azul">Que</span> <span class="amarelo">Pena,</span> <span class="vermelho">voce</span> <span class="verde">perdeu</span> <span class="amarelo">tente</span> <span class="azul">novamente!</span></h1>
+            <img src="img/sad-mario.png" class="img-game-over">
+
+            <div class="wrapper-btn">
+                <button class="btn-modal btn-red-tr btn-ranking">Ranking</button>
+                <button class="btn-modal btn-red-tr btn-reiniciar">Reiniciar</button>
+            </div>
+        </section>
+
+
         <section class="modal-rankin"></section>
     </section>
 </body>
