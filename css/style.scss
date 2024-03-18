@@ -274,7 +274,8 @@ $corPreto: #000;
     // Estilo Login
     .modal-login{
         width: 750px;
-        height: 516px;
+        min-height: 450px;
+        max-height: 520px;
         border-radius: 20px;
         box-shadow: 3px 3px 14px $corAzul;
         background-image: url('../img/background-login.png');
