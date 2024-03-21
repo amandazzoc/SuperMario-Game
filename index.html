@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Script js -->
-    <script src="js/script.js" defer></script>
+    <script type="module" src="js/script.js" defer></script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/susto.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/mario-game-over.png" type="image/x-icon">
 </head>
 <body>
     <!-- tag principal -->
@@ -42,7 +42,7 @@
             </div>
         </header>
 
-        <img src="img/mario.gif" class="img-mario" id="mario">
+        <img src="img/mario.png" class="img-mario pular" id="imgMario">
         <img src="img/clouds.png" class="img-nuvem">
         <img src="img/clouds.png" class="img-nuvem img-nuvem2">
         <img src="img/estrela.png" class="img-star" id="star">
@@ -53,7 +53,7 @@
         <img src="img/bullet.png" class="img-bomba" id="bomba">
         <img src="img/pipe.png" class="img-cano" id="cano">
 
-       <section class="sleep active">
+       <section class="sleep">
             <div class="contagem">
                 <img src="img/cogumelo.png" class="img-cogumelo">
                 <span class="txt-sleep verde" >5</span>
@@ -79,8 +79,8 @@
         
     </main>
 
-    <section class="modal">
-        <section class="modal-login">
+    <section class="modal habilitar ">
+        <section class="modal-login active">
             <h1 class="titulo"><span class="azul">Pronto</span> <span class="amarelo">para</span> <span class="vermelho">um</span> <span class="verde">novo</span> <span class="amarelo">desafio?</span></h1>
 
             <input type="text" class="input-jogador" id="inputJogador" placeholder="Jogador..." onfocus="true">
@@ -128,5 +128,18 @@
             <button class="btn-modal btn-red-tr btn-reiniciar">Reiniciar</button>
         </section>
     </section>
+
+    <!-- Audios do jogo -->
+    <audio src="sons/audio-abertura.wav" id="somAbertura"></audio>
+    <audio src="sons/audio-agachado.wav" id="somAgachado"></audio>
+    <audio src="sons/audio-estrela.wav" id="somEstrela"></audio>
+    <audio src="sons/audio-game-over.wav" id="somGameOver"></audio>
+    <audio src="sons/audio-moeda.wav" id="somMoeda"></audio>
+    <audio src="sons/audio-perdeu.wav" id="somPerdeu"></audio>
+    <audio src="sons/audio-principal.mp3" id="somPrincipal"></audio>
+    <audio src="sons/audio-pulo.wav" id="somPulo"></audio>
+    <audio src="sons/audio-ranking.wav" id="somRanking"></audio>
+    <audio src="sons/audio-velocidade.wav" id="somVelocidade"></audio>
+    <audio src="sons/audio-voar.wav" id="somVoar"></audio>
 </body>
 </html>

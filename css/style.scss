@@ -57,12 +57,7 @@ $corPreto: #000;
         .img-star2{
             animation: move-star 2s infinite linear 1.5s;
         }
-        .pular{
-            animation: pulo-mario 1s infinite linear;
-        }
-        .voar{
-            animation: voo-mario 1.5s ease-out;
-        }
+        
     }
 
     //Topo - Placar
@@ -200,6 +195,16 @@ $corPreto: #000;
         position: absolute;
         top: 200px;
         right: -70px;
+    }
+    .pular{
+        animation: pulo-mario 1s linear;
+    }
+    .voar{
+        animation: voo-mario 1.5s ease-out;
+    }
+    .abaixar {
+        width: 70px;
+        left: 60px;
     }
 }
 //Animações
