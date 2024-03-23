@@ -9,7 +9,4 @@ let estrelasJogador = 0;
 let tempoJogador = 0;
 let pontuacaoJogador = 0;
 
-// console.log(getBanco())
-// conexoes.teste();
 
-document.addEventListener('keydown', modulos.pular);

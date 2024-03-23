@@ -46,12 +46,6 @@
 .cenario.start .img-star2 {
   animation: move-star 2s infinite linear 1.5s;
 }
-.cenario.start .pular {
-  animation: pulo-mario 1s infinite linear;
-}
-.cenario.start .voar {
-  animation: voo-mario 1.5s ease-out;
-}
 .cenario .header {
   width: 100%;
   display: flex;
@@ -174,6 +168,16 @@
   position: absolute;
   top: 200px;
   right: -70px;
+}
+.cenario .pular {
+  animation: pulo-mario 1s linear;
+}
+.cenario .voar {
+  animation: voo-mario 1.5s ease-out;
+}
+.cenario .abaixar {
+  width: 70px;
+  left: 60px;
 }
 
 @keyframes move-nuvens {

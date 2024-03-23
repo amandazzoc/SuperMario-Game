@@ -1,3 +1,4 @@
+// Elementos Globais
 const imgMario = document.querySelector('#imgMario');
 
 const playSom = (elemento) => {
@@ -11,9 +12,40 @@ const stopSom = (elemento) => {
     element.pause();
 };
 
-const pular = (xuxu) => {
-    console.log(`A telca que você apertou foi: ${xuxu}`);
+const pular = ({key}) => {
+    if(key == 'w'){
+        imgMario.classList.add(`pular`);
+
+        playSom('somPulo');
+
+        setTimeout(() => {
+            imgMario.classList.remove(`pular`);
+        }, 500);
+    }
 };
 
+document.addEventListener('keydown', pular);
 
-export {playSom, stopSom, };
+const voar = ({key}) => {
+    if(key == ' ') {
+        imgMario.classList.add('voar');
+        imgMario.src = './img/mario-voando.png';
+        
+        playSom('somVoar');
+
+        setTimeout(() => {
+            imgMario.classList.remove(`voar`);
+            imgMario.src = './img/mario.gif';
+        }, 1500);
+    }
+}
+document.addEventListener('keydown', voar);
+
+const abaixar = ({key}) => {
+    if(key == 's') {
+        imgMario.classList.add('abaixar');
+        imgMario.src = './img/mario-agachado.png';
+    }
+}
+document.addEventListener('keydown', abaixar);
+export {playSom, stopSom, pular, voar};
