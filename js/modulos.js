@@ -1,4 +1,3 @@
-// Elementos Globais
 const imgMario = document.querySelector('#imgMario');
 
 const playSom = (elemento) => {
@@ -13,7 +12,7 @@ const stopSom = (elemento) => {
 };
 
 const pular = ({key}) => {
-    if(key == 'w'){
+    if(key === 'w'){
         imgMario.classList.add(`pular`);
 
         playSom('somPulo');
@@ -24,10 +23,9 @@ const pular = ({key}) => {
     }
 };
 
-document.addEventListener('keydown', pular);
 
 const voar = ({key}) => {
-    if(key == ' ') {
+    if(key === ' ') {
         imgMario.classList.add('voar');
         imgMario.src = './img/mario-voando.png';
         
@@ -39,13 +37,30 @@ const voar = ({key}) => {
         }, 1500);
     }
 }
-document.addEventListener('keydown', voar);
 
 const abaixar = ({key}) => {
-    if(key == 's') {
+    if(key === 's') {
         imgMario.classList.add('abaixar');
         imgMario.src = './img/mario-agachado.png';
+
+        playSom('somAgachado');
+
+
     }
-}
-document.addEventListener('keydown', abaixar);
-export {playSom, stopSom, pular, voar};
+};
+
+
+const levantar = ({key}) =>{
+    if(key === 's') {
+        imgMario.classList.remove('abaixar');
+        imgMario.src = './img/mario.gif';
+    };
+};
+
+const limparTexto = () =>{
+    inputJogador.value = '';
+    btnStart.setAttribute('disabled', '');
+};
+
+
+export {playSom, stopSom, pular, voar, abaixar, levantar, limparTexto, imgMario};

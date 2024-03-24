@@ -57,6 +57,7 @@ $corPreto: #000;
         .img-star2{
             animation: move-star 2s infinite linear 1.5s;
         }
+
         
     }
 
@@ -89,6 +90,10 @@ $corPreto: #000;
                     color: $corAzul;
                     margin-bottom: 5px ;
                 }
+            }
+
+            .coluna-nome-jogador{
+                width: 260px;
             }
 
             .img-logo{

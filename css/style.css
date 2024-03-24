@@ -74,6 +74,9 @@
   color: #199bd9;
   margin-bottom: 5px;
 }
+.cenario .header .wrapper-topo .coluna-nome-jogador {
+  width: 260px;
+}
 .cenario .header .wrapper-topo .img-logo {
   position: absolute;
   left: 0;

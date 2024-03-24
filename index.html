@@ -16,13 +16,13 @@
 </head>
 <body>
     <!-- tag principal -->
-    <main class="cenario">
+    <main class="cenario" id="cenario">
 
         <header class="header">
             <div class="wrapper-topo">
-                <div class="coluna">
+                <div class="coluna coluna-nome-jogador">
                     <span class="titulo">Jogador</span>
-                    <span class="texto verde" id="txtNomeJogador">Nome Jogador</span>
+                    <span class="texto verde " id="txtNomeJogador">Nome</span>
                 </div>
                 <img src="img/logo.png" class="img-logo">
                 <div class="placar">
@@ -42,7 +42,7 @@
             </div>
         </header>
 
-        <img src="img/mario.gif" class="img-mario" id="imgMario">
+        <img src="img/mario.png" class="img-mario" id="imgMario">
         <img src="img/clouds.png" class="img-nuvem">
         <img src="img/clouds.png" class="img-nuvem img-nuvem2">
         <img src="img/estrela.png" class="img-star" id="star">
@@ -53,10 +53,10 @@
         <img src="img/bullet.png" class="img-bomba" id="bomba">
         <img src="img/pipe.png" class="img-cano" id="cano">
 
-       <section class="sleep">
+       <section class="sleep" id="sleep">
             <div class="contagem">
                 <img src="img/cogumelo.png" class="img-cogumelo">
-                <span class="txt-sleep verde" >5</span>
+                <span class="txt-sleep verde" id="txtSleep">5</span>
             </div>
             <div class="wrapper-regras ">
                 <div class="bloco-regras">
@@ -79,8 +79,8 @@
         
     </main>
 
-    <section class="modal">
-        <section class="modal-login">
+    <section class="modal habilitar" id="modal">
+        <section class="modal-login active" id="modalLogin">
             <h1 class="titulo"><span class="azul">Pronto</span> <span class="amarelo">para</span> <span class="vermelho">um</span> <span class="verde">novo</span> <span class="amarelo">desafio?</span></h1>
 
             <input type="text" class="input-jogador" id="inputJogador" placeholder="Jogador..." onfocus="true">
