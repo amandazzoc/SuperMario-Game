@@ -36,26 +36,26 @@ $corPreto: #000;
         .img-nuvem2{
             animation: move-nuvens 20s infinite linear 9s;
         }
-        .img-cano{
-            animation: move-cano 3s infinite linear;
-        }
-        .img-bomba{
-            animation: move-bomba 3s infinite linear 1.5s;
-        }
+        // .img-cano{
+        //     animation: move-elementos 3s infinite linear;
+        // }
+        // .img-bomba{
+        //     animation: move-elementos 3s infinite linear 1.5s;
+        // }
         .img-coin{
-            animation: move-coin 2.5s infinite linear;
+            animation: move-elementos 2.5s infinite linear;
         }
         .img-coin2{
-            animation: move-coin 2.5s infinite linear .5s;
+            animation: move-elementos 2.5s infinite linear .5s;
         }
         .img-coin3{
-            animation: move-coin 2.5s infinite linear 1s;
+            animation: move-elementos 2.5s infinite linear 1s;
         }
         .img-star{
-            animation: move-star 2.5s infinite linear;
+            animation: move-elementos 2.5s infinite linear;
         }
         .img-star2{
-            animation: move-star 2s infinite linear 1.5s;
+            animation: move-elementos 2s infinite linear 1.5s;
         }
 
         
@@ -213,41 +213,17 @@ $corPreto: #000;
     }
 }
 //Animações
+@keyframes move-elementos {
+    from{
+        right: 130px;
+    }
+    to{
+        right: 100%;
+    }
+}
 @keyframes move-nuvens {
     from{
         right: -500px;
-    }
-    to{
-        right: 100%;
-    }
-}
-@keyframes move-cano {
-    from{
-        right: -100px;
-    }
-    to{
-        right: 100%;
-    }
-}
-@keyframes move-coin {
-    from{
-        right: -50;
-    }
-    to{
-        right: 100%;
-    }
-}
-@keyframes move-bomba {
-    from{
-        right: -142;
-    }
-    to{
-        right: 100%;
-    }
-}
-@keyframes move-star{
-    from{
-        right: -60px;
     }
     to{
         right: 100%;

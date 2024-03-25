@@ -25,26 +25,20 @@
 .cenario.start .img-nuvem2 {
   animation: move-nuvens 20s infinite linear 9s;
 }
-.cenario.start .img-cano {
-  animation: move-cano 3s infinite linear;
-}
-.cenario.start .img-bomba {
-  animation: move-bomba 3s infinite linear 1.5s;
-}
 .cenario.start .img-coin {
-  animation: move-coin 2.5s infinite linear;
+  animation: move-elementos 2.5s infinite linear;
 }
 .cenario.start .img-coin2 {
-  animation: move-coin 2.5s infinite linear 0.5s;
+  animation: move-elementos 2.5s infinite linear 0.5s;
 }
 .cenario.start .img-coin3 {
-  animation: move-coin 2.5s infinite linear 1s;
+  animation: move-elementos 2.5s infinite linear 1s;
 }
 .cenario.start .img-star {
-  animation: move-star 2.5s infinite linear;
+  animation: move-elementos 2.5s infinite linear;
 }
 .cenario.start .img-star2 {
-  animation: move-star 2s infinite linear 1.5s;
+  animation: move-elementos 2s infinite linear 1.5s;
 }
 .cenario .header {
   width: 100%;
@@ -183,41 +177,17 @@
   left: 60px;
 }
 
+@keyframes move-elementos {
+  from {
+    right: 130px;
+  }
+  to {
+    right: 100%;
+  }
+}
 @keyframes move-nuvens {
   from {
     right: -500px;
-  }
-  to {
-    right: 100%;
-  }
-}
-@keyframes move-cano {
-  from {
-    right: -100px;
-  }
-  to {
-    right: 100%;
-  }
-}
-@keyframes move-coin {
-  from {
-    right: -50;
-  }
-  to {
-    right: 100%;
-  }
-}
-@keyframes move-bomba {
-  from {
-    right: -142;
-  }
-  to {
-    right: 100%;
-  }
-}
-@keyframes move-star {
-  from {
-    right: -60px;
   }
   to {
     right: 100%;
