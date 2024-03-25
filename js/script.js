@@ -16,7 +16,8 @@ const imgCano = document.querySelector('#imgCano');
 const imgBomba = document.querySelector('#imgBomba');
 const imgMoedas = document.querySelectorAll('#imgCoin');
 const imgEstrelas = document.querySelectorAll('#imgStar');
-
+// Esses all é como se fosse um let lista = [item1, item2, item3];
+const txtMoedas = document.querySelector('#txtMoedas');
 
 
 // Variaveis globais
@@ -121,5 +122,26 @@ const pegarElementos = () => {
         let posicaoMarioBottom = window.getComputedStyle(modulos.imgMario).bottom.replace('px', '');
 
         let posicaoMarioTop = modulos.imgMario.offsetTop;
+
+        // Chamar elemento, passa no forEach, dois parametros, um é o elemento e o outro a posição do elemento
+        imgMoedas.forEach((item, index) =>{
+            let posicaoMoedaLeft = item.offsetLeft;
+
+            if(posicaoMarioBottom >= 170 && posicaoMoedaLeft <= 150){
+                moedasJogador++;
+
+                txtMoedas.innerHTML = moedasJogador;
+
+                item.style.display = 'none';
+
+                modulos.playSom('somMoeda');
+
+                setTimeout(() => {
+                    item.style.display = 'block';
+                }, 250);
+            }
+            
+        });
+
     }, 150);
 };
