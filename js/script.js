@@ -18,6 +18,7 @@ const imgMoedas = document.querySelectorAll('#imgCoin');
 const imgEstrelas = document.querySelectorAll('#imgStar');
 // Esses all é como se fosse um let lista = [item1, item2, item3];
 const txtMoedas = document.querySelector('#txtMoedas');
+const txtEstrelas = document.querySelector('#txtEstrelas');
 
 
 // Variaveis globais
@@ -122,12 +123,11 @@ const pegarElementos = () => {
         let posicaoMarioBottom = window.getComputedStyle(modulos.imgMario).bottom.replace('px', '');
 
         let posicaoMarioTop = modulos.imgMario.offsetTop;
-
         // Chamar elemento, passa no forEach, dois parametros, um é o elemento e o outro a posição do elemento
         imgMoedas.forEach((item, index) =>{
             let posicaoMoedaLeft = item.offsetLeft;
 
-            if(posicaoMarioBottom >= 170 && posicaoMoedaLeft <= 150){
+            if(posicaoMarioBottom >= 170 && posicaoMarioBottom <= 200 && posicaoMoedaLeft <= 150){
                 moedasJogador++;
 
                 txtMoedas.innerHTML = moedasJogador;
@@ -138,10 +138,28 @@ const pegarElementos = () => {
 
                 setTimeout(() => {
                     item.style.display = 'block';
-                }, 250);
+                }, 100);
             }
             
         });
 
-    }, 150);
+        imgEstrelas.forEach((item) => {
+            let posicaoEstrelaLeft = item.offsetLeft;
+
+            if(posicaoMarioTop <= 250 && posicaoMarioTop >= 120 && posicaoEstrelaLeft <= 350 && posicaoEstrelaLeft >= 200){
+                estrelasJogador++;
+
+                txtEstrelas.innerHTML = estrelasJogador;
+
+                item.style.display = 'none';
+
+                modulos.playSom('somEstrela');
+
+                setTimeout(() => {
+                    item.style.display = 'block';
+                }, 100);
+            }
+        });
+
+    }, 250);
 };
