@@ -181,7 +181,7 @@ $corPreto: #000;
     .img-nuvem2{
         top: 300px;
     }
-    .img-cano{
+    .img-tubo{
         position: absolute;
         bottom: 0;
         right: -80px;
@@ -204,7 +204,7 @@ $corPreto: #000;
         right: -70px;
     }
     .pular{
-        animation: pulo-mario 1s linear;
+        animation: pulo-mario .5s ease-out;
     }
     .voar{
         animation: voo-mario 1.5s ease-out;

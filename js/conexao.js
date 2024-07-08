@@ -12,7 +12,7 @@ const getBanco = () => {
 const bancoTemp = (nome, moedas, estrelas, tempo, pontuacao) => {
 
     //Variavel que recebe as informações do banco
-    let banco = getBanco(); // <-- Array
+    let banco = getBanco();  // <-- Array
 
     // Encapsula as informações dentro de um objeto
     let dados = {

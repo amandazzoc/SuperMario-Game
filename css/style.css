@@ -146,7 +146,7 @@
 .cenario .img-nuvem2 {
   top: 300px;
 }
-.cenario .img-cano {
+.cenario .img-tubo {
   position: absolute;
   bottom: 0;
   right: -80px;
@@ -167,7 +167,7 @@
   right: -70px;
 }
 .cenario .pular {
-  animation: pulo-mario 1s linear;
+  animation: pulo-mario 0.5s ease-out;
 }
 .cenario .voar {
   animation: voo-mario 1.5s ease-out;
